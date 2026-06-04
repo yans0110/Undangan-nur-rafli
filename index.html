@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Wedding of Rafli & Siti</title>
+<style>
+body{margin:0;font-family:Georgia,serif;background:#111;color:#fff;text-align:center}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:20px;background:linear-gradient(#111,#222)}
+h1{font-size:3em;margin:0}
+.section{padding:60px 20px;max-width:900px;margin:auto}
+.gallery img{width:45%;margin:10px;border-radius:12px}
+.btn{display:inline-block;padding:12px 20px;background:#d4af37;color:#111;text-decoration:none;border-radius:8px}
+.countdown{font-size:1.5em;margin:20px}
+</style>
+</head>
+<body>
+<div class="hero">
+<h3>The Wedding Of</h3>
+<h1>Muhamad Rafliyansyah & Siti Nurhasanah</h1>
+<p>02 Agustus 2026</p>
+<div id="countdown" class="countdown"></div>
+</div>
+
+<div class="section">
+<h2>Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
+<p>Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan kami.</p>
+</div>
+
+<div class="section">
+<h2>Mempelai Pria</h2>
+<p>Muhamad Rafliyansyah</p>
+<p>Putra dari Bpk. Syahrun & Ibu Siti Rohaya</p>
+
+<h2>Mempelai Wanita</h2>
+<p>Siti Nurhasanah</p>
+<p>Putri dari Bpk. Haeruman & Ibu Suriah</p>
+</div>
+
+<div class="section">
+<h2>Akad & Resepsi</h2>
+<p>Minggu, 02 Agustus 2026</p>
+<p>Kp. Onyam RT 01 RW 09 Sukabakti Curug Tangerang</p>
+<p><a class="btn" href="https://maps.app.goo.gl/iwZ2oMDqh5vTAgoy8">Lihat Lokasi</a></p>
+</div>
+
+<div class="section gallery">
+<h2>Galeri</h2>
+<p>Simpan foto prewedding Anda dengan nama foto1.jpg, foto2.jpg, foto3.jpg, foto4.jpg pada folder yang sama.</p>
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+</div>
+
+<div class="section">
+<h2>Kisah Cinta</h2>
+<p>Silakan edit bagian ini sesuai kisah perjalanan cinta Anda.</p>
+</div>
+
+<div class="section">
+<h2>Terima Kasih</h2>
+<p>Merupakan suatu kehormatan bagi kami atas kehadiran dan doa restu Anda.</p>
+</div>
+
+<script>
+const target=new Date("Aug 2, 2026 00:00:00").getTime();
+setInterval(()=>{
+const now=new Date().getTime();
+const d=target-now;
+const days=Math.floor(d/(1000*60*60*24));
+document.getElementById("countdown").innerHTML="Menuju Hari Bahagia: "+days+" hari";
+},1000);
+</script>
+</body>
+</html>
